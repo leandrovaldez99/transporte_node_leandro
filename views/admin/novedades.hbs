@@ -27,15 +27,16 @@
                     </tr>
                 </thead>
                 <tbody>
+                    {{#each novedades}}
                     <tr>
-                        <th scope="row">1</th>
-                        <td>Titulo</td>
+                        <th scope="row"> {{id}} </th>
+                        <td> {{titulo}} </td>
                         <td class="text-end">
                             <a class="btn btn-secondary" href=""><i class="fa-solid fa-pencil"></i></a>
                             <a class="btn btn-secondary" href=""><i class="fa-solid fa-trash"></i></a>
                         </td>
                     </tr>
-
+                    {{/each}}
                 </tbody>
             </table>
         </div>
